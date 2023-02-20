@@ -1,0 +1,68 @@
+<html>
+<head>
+	<!-- Keeping all the styles and CSS in the style.css file , keeps it tidy and centralized-->
+  <link rel="stylesheet"  href="css/style.css"  />
+
+  <body style="background-color: #CCFFFF"></body>
+<!-- Importing the javascript with Brute forcing functions-->
+<script type="text/javascript" src="js/Brute Force.js"></script>
+<a href="index.html">
+  <img alt="" height="145" src="Images/cybex.png" style="float: left" width="114" class="auto-style5" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </h1>
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+
+<h1 class="auto-style2"> "Brute Forcing Login Page Password"</h1>
+  </head>
+  <body>
+
+    <div class="auto-style2" style="float: right;"> 
+      <p>In this webpage, you are able to see a simple example of how hackers are using Social Engineering Data in order to try and guess the password to the corresponding User ID. In order to demonstrate this I have created a simple game representing this. On the right-hand side of the page, you will see a picture with some data that will help you guess the password of each person. Firstly you will need to enter the “User ID” in the text box on the left-hand side. Then by using the data provided on the right-hand side try and guess a password that may be the correct one and press the “Brute Force” button. The algorithm will try and guess the correct password by using all different combinations. If your first guess input is very close to the actual password the algorithm will not take a lot of time guessing the password, if it’s not it will take a little bit more time to find the correct password. You can use multiple inputs until the correct one is found and once found it will redirect you to the user’s webpage highlighting the correct password in green. As you go down the Social Engineering Data the more difficult it gets to guess the correct password.  </p>
+    </div>
+
+    <div>
+      <p>"User ID"</p>  
+<!--Enter user ID-->
+      <textarea id="UserID" cols="50" rows="1"></textarea>
+      <br />
+      <p>"Password"</p>  
+      <!--Enter user ID-->
+      <textarea id="Password" cols="50" rows="1" type="password"></textarea>
+      <br />
+      <button onclick="checkCredentials()" id="loginButton">Login</button>
+      <div id="Result"></div>
+      <br />
+      <br />
+<p>_____________________________________________________________________________________________________________________________________________________</p>
+<img alt="social engineering data page" class="imageright" src="Images\data.png"/> 
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+
+      <!--Enter the userID to be hacked-->
+      <p>Enter the userID to brute force</p>
+      <textarea id="guessID" cols="25" rows="1"></textarea>
+      <!--Enter the first guess password strings to iterate here-->
+      <p>Enter the first guess password string to start brute forcing</p>
+      <textarea id="guessPassword" cols="25" rows="1"></textarea>
+
+      <p>"Guessed Password"</p>  
+      <textarea id="bruteForcedOutput" cols="35" rows="1"></textarea>
+      <br />
+      
+
+      <button onclick="startBruteForce(strings)">Brute Force</button>
+      <button onclick="stopBruteForce()">Stop Brute Force</button>
+
+      <br />
+      <br />
+      <br />
+  </body>
+</html>

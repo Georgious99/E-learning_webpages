@@ -1,0 +1,65 @@
+<html>
+  <head>
+	<!-- Keeping all the styles and CSS in the style.css file , keeps it tidy and centralized-->
+    <link rel="stylesheet"  href="css/style.css"  />
+    
+  <body style="background-color: #CCFFFF"></body>
+
+    <script src="https://cdn.jsdelivr.net/npm/jsencrypt@3.0.0-beta.1/bin/jsencrypt.min.js"></script>
+<script type="text/javascript" src="js/RSA Encryption.js"></script>
+<a href="index.html">
+  <img alt="" height="145" src="Images/cybex.png" style="float: left" width="114" class="auto-style5" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </h1>
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+
+<h1> "RSA Encryption and Decryption"</h1>
+    
+  </head>
+  <body>
+
+    <div class="auto-style2" style="float: right;"> 
+        <p> The RSA encryption is a bit different than the AES. Here you will need to generate two different keys the Public and Private Keys. Once you have generated the two keys you can enter the text that you want to encrypt below in the text box provided and press the “Encrypt” button. Once you have pressed the button you will see the text being changed into a non-readable text that if you press the “Decrypt” it will appear again as you have entered it at the start of the process. </p>
+    </div>
+
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+
+    <div>
+      <br />
+      <button onclick="generateKeys()">Generate Keys</button>
+      <br />
+      <div>Public Key:</div>
+      <textarea id="publicKey" cols="50" row="4"></textarea>
+      <br />
+      <div>Private Key:</div>
+      <textarea id="privateKey" cols="50" row="4"></textarea>
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <textarea id="text"></textarea>
+      <button onclick="encryptText()">Encrypt</button>
+      <button onclick="decryptText()">Decrypt</button>
+      <br />
+      <br />
+      <br />
+      <br />
+
+      <div>Encrypted:</div>
+      <div id="encrypted"></div>
+      <br />
+      <div>Decrypted:</div>
+      <div id="decrypted"></div>
+    </div>
+  </body>
+</html>
